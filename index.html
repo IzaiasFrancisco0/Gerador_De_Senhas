@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="caixa">
+        <div class="titulo">
+            <h2>Gerador de senha <i class="fa-solid fa-lock"></i></h2>
+            <span>Mantenha suas contas seguras, atráves de senhas seguras</span>
+        </div>
+        <input id="senha" type="text" />
+        <div class="escolher">
+            <div>
+                <label for="tamanho_senha">Tamanho senha</label>
+                <input id="quantidade" type="number" name="tamanho_senha">
+            </div>
+            <div>
+                <label for="include_uppercase">Incluir letras maiusculas</label>
+                <input id="letras_maiuscula" type="checkbox" name="include_uppercase" />
+            </div>
+            <div>
+                <label for="include_lower">Incluir letras minusculas</label>
+                <input id="letras_minusculas" type="checkbox" name="include_minuscula" />
+            </div>
+            <div>
+                <label for="include_numero">Incluir numero</label>
+                <input id="numero" type="checkbox" name="include_numero" />
+            </div>
+            <div>
+                <label for="include_especial_caracter">Incluir caracteries especiais</label>
+                <input id="caracter_especial" type="checkbox" name="include_especial_caracter" />
+            </div>
+        </div>
+        <div class="botoes_senha">
+            <button id="gerarSenha">Gerar senha</button>
+            <button id="copiarSenha">Copiar senha</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

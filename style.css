@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(#252525, #262626, #1e1e1e);
+}
+input{
+    margin-top: 15px;
+}
+.titulo{
+  text-align: center;
+  padding: 10px;
+  height: 100px;
+}
+.titulo span{
+    font-size: 18px;
+}
+.titulo h2{
+padding-bottom: 20px;
+}
+.titulo i{
+    padding-left: 10px;
+    color: rgb(236, 233, 233);
+}
+#senha{
+    padding: 10px;
+    width: 300px;
+    border-radius: 7px;
+    border: 1px solid rgb(238, 235, 235);
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+}
+#senha:hover{
+    border: 1px solid rgb(238, 235, 235);
+}
+.escolher{
+    display: block;
+}
+.caixa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    color: rgb(235, 232, 232);
+    border: none;
+    box-shadow: 2px 2px 2px #323232;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(32, 32, 32);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.escolher{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+.escolher div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 30px;
+}
+label{
+    padding-left: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+#quantidade{
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+#copiarSenha{
+    padding: 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+#gerarSenha{
+ padding: 8px;
+ border-radius: 7px;
+ cursor: pointer;
+ transition: 0.5s ease-in-out;
+}
+#gerarSenha:hover,
+#copiarSenha:hover{
+background-color: #323232;
+color: #fff;
+}
+.botoes_senha{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 230px;
+}
+
+
+@media (width < 500px){
+    .caixa{
+        width: 94%;
+    }
+    #senha{
+        width: 80%;
+    }
+}
